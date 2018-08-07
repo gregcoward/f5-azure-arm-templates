@@ -36,7 +36,7 @@
     "instanceName": "bigip",
     "instanceType": "Standard_DS2_v2",
     "imageName": "Best",
-    "bigIpVersion": "13.1.0200",
+    "bigIpVersion": "latest",
     "bigIqAddress": "172.16.60.4",
     "bigIqUsername": "admin",
     "bigIqLicensePoolName": "f5demo_lic_pool",
