@@ -25,7 +25,8 @@
         "Yes",
         "No"
       ],
-      "defaultValue": "Yes"
+      "defaultValue": "Yes",
+      "type": "string"
     }
   },
   "variables": {
