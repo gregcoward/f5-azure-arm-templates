@@ -160,7 +160,7 @@
       },
       "Yes": {
         "hashCmd": "[concat('custId=`echo \"', variables('subscriptionId'), '\"|sha512sum|cut -d \" \" -f 1`; deployId=`echo \"', variables('deploymentId'), '\"|sha512sum|cut -d \" \" -f 1`')]",
-        "metricsCmd": "[concat(' --metrics customerId:${custId},deploymentId:${deployId},templateName:standalone_1nic-existing-stack-supported,templateVersion:5.2.0.0,region:', variables('location'), ',bigIpVersion:', parameters('bigIpVersion') ,',licenseType:bigiq,cloudLibsVersion:', variables('f5CloudLibsTag'), ',cloudName:azure')]"
+        "metricsCmd": "[concat(' --metrics customerId:${custId},deploymentId:${deployId},templateName:standalone_1nic-existing-stack-supported,templateVersion:5.2.0.0,region:', variables('location'), ',bigIpVersion:', variables('bigIpVersion') ,',licenseType:bigiq,cloudLibsVersion:', variables('f5CloudLibsTag'), ',cloudName:azure')]"
       }
     },
     "customImage": "[replace(variables('customImagePre'), 'OPTIONAL', '')]",
