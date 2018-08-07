@@ -265,6 +265,34 @@
             }
           },
           {
+            "name": "allow_https_app",
+            "properties": {
+              "access": "Allow",
+              "description": "",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "443",
+              "direction": "Inbound",
+              "priority": 102,
+              "protocol": "Tcp",
+              "sourceAddressPrefix": "[variables('restrictedSrcAddress')]",
+              "sourcePortRange": "*"
+            }
+          },
+          {
+            "name": "allow_http_app",
+            "properties": {
+              "access": "Allow",
+              "description": "",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "80",
+              "direction": "Inbound",
+              "priority": 103,
+              "protocol": "Tcp",
+              "sourceAddressPrefix": "[variables('restrictedSrcAddress')]",
+              "sourcePortRange": "*"
+            }
+          },
+          {
             "name": "ssh_allow_22",
             "properties": {
               "access": "Allow",
@@ -272,7 +300,7 @@
               "destinationAddressPrefix": "*",
               "destinationPortRange": "22",
               "direction": "Inbound",
-              "priority": 102,
+              "priority": 104,
               "protocol": "Tcp",
               "sourceAddressPrefix": "[variables('restrictedSrcAddress')]",
               "sourcePortRange": "*"
